@@ -20,7 +20,7 @@ jobs:
           # タグが v1.0/resource のような形式を想定している場合
           MAJOR=$(echo $TAG | cut -d'/' -f1)
           MINOR=$(echo $TAG | cut -d'/' -f2)
-          FILENAME="[${MAJOR}] Japanese Potion ${MINOR}.zip"
+          FILENAME="[${MAJOR}]_Japanese-Potion_${MINOR}.zip"
           
           zip -r "${FILENAME}" assets/ pack.mcmeta
           
